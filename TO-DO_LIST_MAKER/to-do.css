@@ -1,0 +1,60 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.list{
+  width: 200px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(99, 170, 170);
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: rgb(72, 182, 145);
+}
+
+.finalText{
+  display: grid;
+  grid-template-columns: 50px 200px 200px 200px 170px;
+  column-gap: 20px;
+  row-gap: 10px;
+  align-items: center;
+}
+.firstContainer{
+  display: grid;
+  grid-template-columns: 50px 200px 200px 200px 170px 170px;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.taskNumber{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
+}
+.taskNumber, .deleteButton, .taskClass, .inputClass, .dateInput, .addButton, .resetButtonClass{
+  font-size: 14px;
+  padding: 10px 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: black;
+  background-color: rgb(123, 180, 180);
+}
+.deleteButton:hover, .resetButtonClass:hover, .taskClass:hover, .inputClass:hover, .dateInput:hover, .addButton:hover{
+  cursor: pointer;
+}
+.addButton:hover, .deleteButton:hover, .resetButtonClass:hover{
+  transform: scale(1.1);
+  background-color: rgb(194, 236, 236);
+  cursor: pointer;
+}
+.inputClass::placeholder, .taskClass::placeholder{
+  color: black;
+  font-size: 14px;
+}
+div{
+  font-size: 18px;
+}
+.addButton, .deleteButton, .resetButtonClass{
+  transition: transform 0.2s;
+}

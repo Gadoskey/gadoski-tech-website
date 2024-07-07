@@ -1,0 +1,84 @@
+.project-image{
+  height: 180px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.project-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+  border-top: 1px solid rgb(231, 231, 231);
+  border-left: 1px solid rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+}
+.project-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+}
+.project-name {
+  font-size: 20px;
+  font-weight: 800;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-description{
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+/* This @media means when the screen width is 1600px or
+   less, we will divide the grid into 6 columns. */
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.viewbutton {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgreen;
+  background-color: green;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.viewbutton:hover{
+  transform: scale(1.1);
+}
