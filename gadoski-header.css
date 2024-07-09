@@ -14,26 +14,33 @@
   height: 60px;
   z-index: 1;
 }
-.test{
-  background-color: white;
-  border-radius: 17px;
-}
+
 /*The three sections in the header*/
 .right-section{
   display: flex;
-  flex: 1;
+  flex: 2;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
+}
+.test {
+  background-color: white;
+  border-radius: 17px;
+}
+.right-section img {
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .left-section{
   display: flex;
   /*height: 60px;
   width: 500px;*/
   flex-direction: row;
-  flex: 1;
+  flex: 2;
   justify-content:left;
   align-items: center;
+  padding-right: 50px;
 }
 .middle-section{
   display: flex;
@@ -114,11 +121,6 @@
 
 .image-text {
   animation: colorChange 7s infinite;
-}
-.right-section img{
-  height: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .github-container{
   position: relative;

@@ -1,22 +1,26 @@
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
   .header {
-    height: 43px;
+    height: 60px;
     z-index: 1;
   }
   body {
-    padding-top: 50px;
+    padding-top: 66px;
   }
   .first-container {
     margin-top: 0;
     /* Adjust as needed for mobile layout */
   }
+  .left-section{
+    padding-right: 0;
+  }
   .image-text {
     width: 165px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
     margin: 0;
     padding-left: 0;
+    padding-right: 25px;
   }
   .image-container {
     width: 50px;
@@ -44,7 +48,7 @@
       border: 1px solid rgb(79, 79, 88);
     }
     .middle-section a{
-      font-size: 12px;
+      font-size: 16px;
     }
   
     .list-container {
@@ -68,8 +72,6 @@
       /* Rounded corners on hover */
     }
         .right-section img {
-          height: 20px;
-          margin-left: 4px;
-          margin-right: 4px;
+          height: 28px;
         }
 }
