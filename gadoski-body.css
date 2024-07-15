@@ -1,10 +1,104 @@
 body {
   font-family: Tahoma, Verdana, Arial, sans-serif;
   margin: 0;
-  padding-top: 67px;
+  background-color: rgb(248, 245, 245);
 }
 /* Reset default styles */
 body, ul, li {
   margin: 0;
   list-style: none;
+}
+.first-flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  padding-bottom: 30px;
+  border-radius: 4px;
+  background-color: rgb(252, 251, 251);
+}
+.my-title, .my-title-about, .my-image-container{
+  display: flex;
+}
+.my-title {
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: 800;
+  padding-top: 20px;
+}
+.my-title-about {
+  font-size: 20px;
+  font-weight: 400;
+}
+.my-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  object-fit: fill;
+}
+/*little introduction section styling*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(78, 78, 167);
+  width: 100%;
+  padding: 50px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item1 {
+  margin: 10px 0;
+  width: 700px;
+  color: white;
+  font-size: 28px;
+}
+.item2 {
+  margin: 10px 0;
+  width: 700px;
+  color: white;
+  font-size: 20px;
+  line-height: 34px;
+}
+.talk-class{
+  color: coral;
+}
+/*styling of the latest post section and table*/
+table,
+th,
+td {
+  border: 1px solid darkgray;
+}
+
+.table-container {
+  padding: 50px 180px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+td {
+  text-align: center;
+}
+
+.wide-column {
+  width: 80%;
+}
+
+.narrow-column {
+  width: 20%;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+td,
+th {
+  font-size: 24px;
 }

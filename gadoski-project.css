@@ -1,23 +1,30 @@
 .project-image{
-  height: 180px;
+  height: 120px;
   object-fit: contain;
   border-radius: 4px;
 }
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
 }
 .project-container {
-  padding-top: 40px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
   border-right: 1px solid rgb(231, 231, 231);
   border-bottom: 1px solid rgb(231, 231, 231);
   border-top: 1px solid rgb(231, 231, 231);
   border-left: 1px solid rgb(231, 231, 231);
   display: flex;
   flex-direction: column;
+  background-color: #002F6C;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: transform 0.03s ease;
+}
+.project-container:hover{
+  transform: scale(1.01);
 }
 .project-image-container {
   display: flex;
@@ -34,11 +41,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
-.project-description{
+.project-text {
+  font-size: 24px;
+  font-weight: 800;
+  padding: 10px;
+  margin: 0;
+}
+.project-text-container{
+  display: grid;
+  grid-template-columns: (1, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.text-and-all-project{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.all-projects-button{
+  padding: 4px 10px;
   font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 20px;
+  font-weight: 600;
+  background-color:darkgray;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid rgb(124, 121, 121);
+  transition: transform 0.03s ease;
+}
+.all-projects-button:hover{
+  transform: scale(1.01);
+  background-color: rgb(124, 121, 121);
 }
 
 /* This @media means when the screen width is 1600px or
@@ -68,17 +106,14 @@
     grid-template-columns: 1fr;
   }
 }
-.viewbutton {
-  width: 100%;
-  padding: 8px;
+.view-button {
+  padding: 8px 40px;
+  color: white;
   border-radius: 50px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: darkgreen;
-  background-color: green;
+  border: 1px solid #7c6a05;
+  background-color: #c2a609;
   cursor: pointer;
-  transition: transform 0.1s;
 }
-.viewbutton:hover{
-  transform: scale(1.1);
+.view-button:hover{
+  background-color: #7c6a05;
 }

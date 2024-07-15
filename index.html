@@ -1,121 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadoski Tech</title>
+    <link rel="stylesheet" href="gadoski-header.css" />
+    <link rel="stylesheet" href="gadoski-body.css" />
+    <link rel="stylesheet" href="gadoski-project.css" />
+    <link rel="stylesheet" href="gadoski-media.css" />
+    <link rel="stylesheet" href="gadoski-footer.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gadoski Tech</title>
-  <link rel="stylesheet" href="gadoski.css">
-  <link rel="stylesheet" href="gadoski-header.css">
-  <link rel="stylesheet" href="gadoski-body.css">
-  <link rel="stylesheet" href="gadoski-project.css">
-  <link rel="stylesheet" href="gadoski-tablet.css">
-  <link rel="stylesheet" href="gadoski-mobile.css">
-  <link rel="stylesheet" href="under-construction.css">
-</head>
-
-<body>
-  <div class="header">
-    <div class="left-section">
-      <div class="image-container">
-        <img class="logo" src="images\logo.jpg" alt="Gadoski Tech logo">
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <div class="image-container">
+          <img class="logo" src="images\logo.jpg" alt="Gadoski Tech logo" />
+        </div>
+        <div id="js-image-text" class="page-name">Gadoski Tech</div>
       </div>
-      <div id="js-image-text" class="image-text">Gadoski Tech</div>
-    </div>
-    <div class="middle-section">
-      <div class="list-container">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-    <div class="right-section">
-      <div class="github-container">
-        <a href="https://github.com/Gadoskey?tab=repositories" target="_blank"><img class="github" src="images\github.png" alt=""></a>
-        <div class="github-tooltip">Github</div>
-      </div>
-      <div class="facebook-container">
-        <a href="https://www.facebook.com/profile.php?id=100082214184189&mibextid=LQQJ4d" target="_blank"><img
-                  src="images\facebook.png" alt=""></a>
-        <div class="facebook-tooltip">Facebook</div>
-      </div>
-      <div class="x-container">
-        <a href="https://x.com/ym_Opeyemi" target="_blank"><img class="test" src="images\x.png" alt=""></a>
-        <div class="x-tooltip">X</div>
-      </div>
-      <div class="phone-container">
-        <a href="tel:+2348146787570"><img
-            src="images\call.png" alt=""></a>
-        <div class="phone-tooltip">Call</div>
+      <div class="right-section">
+        <div class="list-container">
+          <a href="#about">About</a>
+          <a href="#contact">Blog</a>
+          <a href="#contact">Contact</a>
+          <a href="#projects">Projects</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <header class="first-container">
-    <div class="typing-animation">Currently Unavailable!</div>
-  </header>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! My name is Yusuf Mustapha Opeyemi, and I am passionate about software engineering. Currently, I am in the
-      final stages of my software engineering program, with just four months left to go.</p>
-    <p>I have a strong foundation in programming and software development, which I've cultivated throughout my academic
-      journey. I am eager to apply my knowledge in real-world projects and contribute meaningfully to the field.</p>
-  </section>
-  
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Proficient in programming languages such as C Programming, Python and JavaScript.</li>
-      <li>Experienced in web development using HTML, CSS, and frameworks like Django and React.</li>
-      <li>Familiar with database management systems such as MySQL and MongoDB.</li>
-      <li>Knowledgeable in software design principles and agile methodologies.</li>
-    </ul>
-  </section>
-  
-  <section class="interests">
-    <h2>Interests</h2>
-    <p>Apart from software engineering, I have a keen interest in exploring new technologies and keeping up with industry
-      trends. I enjoy tackling challenging problems and continuously learning to improve my skills. Outside of tech, I am
-      passionate about reading, hiking, and exploring different cultures through travel.</p>
-  </section>
+    <div class="first-flex-container">
+      <div class="my-title">
+        Technical Writer &amp Aspiring Software Engineer
+      </div>
+      <div class="my-title-about">
+        Two years ago, I was thrilled to dive into the world of tech.
+      </div>
+      <div class="my-image-container">
+        <img class="my-image" src="images/my-image.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="item1">
+        <strong>Hi, i'm Mustopha. Nice to meet you.</strong>
+      </div>
+      <div class="item2">
+        It's been two years since I dove into the world of technology. The journey has not been as easy as I expected, but I
+        love the challenges it brings. I created this website to showcase to the world what I have learned so far and to help
+        explain tech-related concepts through my blog posts. Whether you're a fellow tech enthusiast or just curious about the
+        field, I hope you find my content informative and inspiring. Thank you for visiting, and feel free to reach out <a class="talk-class"  href="#talk-div">here</a> if
+        you have any questions!
+      </div>
+    </div>
+
+      <div class="table-container">
+        <table style="width:100%">
+          <colgroup>
+            <col class="wide-column">
+            <col class="narrow-column">
+          </colgroup>
+          <tr>
+            <th class="left-align">Latest Posts</th>
+            <th class="right-align">Date Added</th>
+          </tr>
+          <tbody class="js-generated-post">
+          </tbody>
+        </table>
+        <div>Want to see more? view</div>
+      </div>
 
 
-  <h2>Projects</h2>
-  <div class="project-grid">
+    <div class="project-text-container">
+      <div class="text-and-all-project">
+        <div class="project-text">Projects</div>
+        <div><button class="all-projects-button">All Projects</button></div>
+      </div>
+      <div class="project-grid"></div>
+    </div>
+
     
-  </div>
-
-  <section id="messageMe">
-    <h2>Feedback</h2>
-    <form action="contact-form-handler.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <ul>
-      <li>Phone: <a href="tel:+2348146787570">08146787570</a></li>
-      <li>Phone (WhatsApp): <a href="tel:+2348181803981">08181803981</a></li>
-      <li>Email: <a href="mailto:mustopha.yusufope@gmail.com">mustopha.yusufope@gmail.com</a></li>
-      <li>X: <a href="https://x.com/ym_Opeyemi">X</a></li>
-      <li>Instagram: <a href="#">Your Instagram Profile</a></li>
-      <li>LinkedIn: <a href="#">Your LinkedIn Profile</a></li>
-      <li>Discord: <a href="#">Your Discord Profile</a></li>
-      <li>Facebook: <a href="#">Your Facebook Profile</a></li>
-    </ul>
-  </section>
-  <footer class="thank-you"><em>Thank you so much.</em></footer>
-  <script src="gadoski.js"></script>
-</body>
-
+    <footer class="footer">
+      <div class="footer-row">
+        <div class="first-footer-grid">
+          <div class="message-me-section">
+              <h2 id="talk-div">Send me a Message</h2>
+              <form action="contact-form-handler.php" method="POST" class="form-container">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+              
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+              
+                <button class="footer-message-button" type="submit">Send</button>
+              </form>
+          </div>
+          <div class="connect-with-me">
+              <h2 class="connect-with-me-text">Connect With Me</h2>
+              <div class="connect-with-me-grid1">
+                <div class="github-container">
+                  <a href="https://github.com/Gadoskey?tab=repositories" target="_blank"><img class="github" src="images\github.png"
+                      alt=""></a>
+                  <div class="github-tooltip">Github</div>
+                </div>
+                <div class="facebook-container">
+                  <a href="https://www.facebook.com/profile.php?id=100082214184189&mibextid=LQQJ4d" target="_blank"><img
+                      src="images\facebook.png" alt=""></a>
+                  <div class="facebook-tooltip">Facebook</div>
+                </div>
+                <div class="x-container">
+                  <a href="https://x.com/ym_Opeyemi" target="_blank"><img class="test" src="images\x.png" alt=""></a>
+                  <div class="x-tooltip">X</div>
+                </div>
+                <div class="phone-container">
+                  <a href="tel:+2348146787570"><img src="images\call.png" alt=""></a>
+                  <div class="phone-tooltip">Call</div>
+                </div>
+                <div class="whatsapp-container">
+                  <a href="https://wa.me/08181803981" target="_blank"><img src="images\whatsapp.png" alt=""></a>
+                  <div class="whatsapp-tooltip">WhatsApp</div>
+                </div>
+                <div class="instagram-container">
+                  <a href="https://www.instagram.com/ope_mii?igsh=MWt1cHc5cWN4cmVoMw%3D%3D&utm_source=qr" target="_blank"><img
+                      src="images\instagram.png" alt=""></a>
+                  <div class="instagram-tooltip">Instagram</div>
+                </div>
+                <div class="tiktok-container">
+                  <a href="https://www.tiktok.com/@opemiiii?_t=8nou4jAFWzt" target="_blank"><img src="images\tiktok.png" alt=""></a>
+                  <div class="tiktok-tooltip">TikTok</div>
+                </div>
+                <div class="phone-container">
+                  <a href="tel:+2348146787570"><img src="images\call.png" alt=""></a>
+                  <div class="phone-tooltip">Call</div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="first-footer-grid">
+          <div class="left-section-footer">
+            <div class="left-footer-list-container">
+              <a href="#about">About</a>
+              <a href="#contact">Blog</a>
+              <a href="#contact">Contact</a>
+              <a href="#projects">Projects</a>
+            </div>
+          </div>
+          <div class="copyright-section">
+            &copy; 2024 Gadoski Tech. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="gadoski-project.js"></script>
+    <script src="gadoski-latest-post.js"></script>
+  </body>
 </html>
