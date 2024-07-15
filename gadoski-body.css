@@ -102,3 +102,8 @@ td,
 th {
   font-size: 24px;
 }
+.see-more-div{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
