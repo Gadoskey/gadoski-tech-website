@@ -228,10 +228,7 @@
   
     /*footer section*/
     .left-footer-list-container a {
-      font-size: 6px;
-    }
-    .testing-about{
-      font-size: 8px;
+      font-size: 14px;
     }
 }
 /* Media Queries targeted for tablets Devices */
