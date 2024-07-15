@@ -1,0 +1,693 @@
+/*header styling*/
+.header {
+  background-color: #1a5bc4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(153, 151, 151);
+  height: 80px;
+}
+
+.page-name {
+  width: 270px;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0;
+  padding-left: 10px;
+  animation: colorChange 7s infinite;
+}
+
+/*The two sections in the header*/
+.right-section {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.right-section div {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  justify-content: left;
+  align-items: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  padding-right: 4px;
+  justify-content: space-between;
+}
+
+.list-container a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  position: relative;
+}
+
+.list-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  background-color: white;
+  transition: height 0.2s;
+}
+
+.list-container a:hover::after {
+  height: 4px;
+  opacity: 1;
+}
+
+.image-container {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  /* Ensures that any overflow is hidden */
+}
+
+.logo {
+  margin-top: 12px;
+  margin-left: 20px;
+  width: 40px;
+  height: 38px;
+  margin-right: 0;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+/*also use this animation for about contact and co*/
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+
+  60% {
+    color: black;
+  }
+
+  70% {
+    color: rgb(175, 42, 42);
+  }
+
+  80% {
+    color: green;
+  }
+
+  90% {
+    color: rgb(201, 77, 201);
+  }
+
+  100% {
+    color: rgb(214, 51, 51);
+  }
+}
+/*body styling*/
+body {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  margin: 0;
+  background-color: rgb(248, 245, 245);
+}
+/* Reset default styles */
+body, ul, li {
+  margin: 0;
+  list-style: none;
+}
+.first-flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  padding-bottom: 30px;
+  border-radius: 4px;
+  background-color: rgb(252, 251, 251);
+}
+.my-title, .my-title-about, .my-image-container{
+  display: flex;
+}
+.my-title {
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: 800;
+  padding-top: 20px;
+}
+.my-title-about {
+  font-size: 20px;
+  font-weight: 400;
+}
+.my-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  object-fit: fill;
+}
+/*little introduction section styling*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(78, 78, 167);
+  width: 100%;
+  padding: 50px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item1 {
+  margin: 10px 0;
+  width: 700px;
+  color: white;
+  font-size: 28px;
+}
+.item2 {
+  margin: 10px 0;
+  width: 700px;
+  color: white;
+  font-size: 20px;
+  line-height: 34px;
+}
+.talk-class{
+  color: coral;
+}
+/*styling of the latest post section and table*/
+table,
+th,
+td {
+  border: 1px solid darkgray;
+}
+
+.table-container {
+  padding: 50px 180px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+td {
+  text-align: center;
+}
+
+.wide-column {
+  width: 80%;
+}
+
+.narrow-column {
+  width: 20%;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+td,
+th {
+  font-size: 24px;
+}
+.see-more-div{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+/*project styling*/
+.project-image {
+  height: 120px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.project-container {
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+  border-top: 1px solid rgb(231, 231, 231);
+  border-left: 1px solid rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+  background-color: #002F6C;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: transform 0.03s ease;
+}
+
+.project-container:hover {
+  transform: scale(1.01);
+}
+
+.project-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 800;
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.project-text {
+  font-size: 24px;
+  font-weight: 800;
+  padding: 10px;
+  margin: 0;
+}
+
+.project-text-container {
+  display: grid;
+  grid-template-columns: (1, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.text-and-all-project {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.all-projects-button {
+  padding: 4px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: darkgray;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid rgb(124, 121, 121);
+  transition: transform 0.03s ease;
+}
+
+.all-projects-button:hover {
+  transform: scale(1.01);
+  background-color: rgb(124, 121, 121);
+}
+
+/* This @media means when the screen width is 1600px or
+   less, we will divide the grid into 6 columns. */
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.view-button {
+  padding: 8px 40px;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #7c6a05;
+  background-color: #c2a609;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  background-color: #7c6a05;
+}
+/*footer css*/
+.footer {
+  height: 600px;
+  margin-top: 100px;
+  background-color: #1a5bc4;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.first-footer-row {
+  display: grid;
+  grid-column: 1fr;
+  padding-bottom: 2px;
+}
+
+.first-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+}
+
+.message-me-section {
+  padding: 0 20px;
+  color: white;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-group label {
+  flex: 1;
+  min-width: 100px;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #e9e8e8;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  max-height: 80px;
+}
+
+.footer-message-button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: rgb(48, 161, 48);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-message-button:hover {
+  background-color: darkgreen;
+}
+
+.connect-with-me {
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-with-me img {
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.connect-with-me-grid1 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
+  margin: 10px 30px;
+  width: 300px;
+}
+
+.connect-with-me-text {
+  text-align: left;
+  padding-left: 30px;
+  color: white;
+}
+
+.github-container {
+  position: relative;
+}
+
+.github-container:hover .github-tooltip {
+  opacity: 1;
+}
+
+.github-tooltip {
+  position: absolute;
+  bottom: -34px;
+  color: white;
+  right: -4px;
+  font-size: 13px;
+  background-color: #0c4096;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+}
+
+.facebook-container {
+  position: relative;
+}
+
+.facebook-container:hover .facebook-tooltip {
+  opacity: 1;
+}
+
+.facebook-tooltip {
+  position: absolute;
+  bottom: -36px;
+  color: white;
+  background-color: #0c4096;
+  right: -12px;
+  font-size: 13px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+}
+
+.x-container {
+  position: relative;
+}
+
+.x-container:hover .x-tooltip {
+  opacity: 1;
+}
+
+.x-tooltip {
+  position: absolute;
+  bottom: -36px;
+  color: white;
+  right: 12px;
+  font-size: 13px;
+  background-color: #0c4096;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+}
+
+.tiktok-container {
+  position: relative;
+}
+
+.tiktok-container:hover .tiktok-tooltip {
+  opacity: 1;
+}
+
+.tiktok-tooltip {
+  position: absolute;
+  bottom: -36px;
+  color: white;
+  font-size: 13px;
+  right: -2px;
+  background-color: #0c4096;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+}
+
+.whatsapp-container {
+  position: relative;
+}
+
+.whatsapp-container:hover .whatsapp-tooltip {
+  opacity: 1;
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  bottom: -36px;
+  color: white;
+  right: -12px;
+  background-color: #93969b;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+}
+
+.instagram-container {
+  position: relative;
+}
+
+.instagram-container:hover .instagram-tooltip {
+  opacity: 1;
+}
+
+.instagram-tooltip {
+  position: absolute;
+  bottom: -36px;
+  right: -14px;
+  color: white;
+  background-color: #93969b;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+}
+
+.phone-container {
+  position: relative;
+}
+
+.phone-container:hover .phone-tooltip {
+  opacity: 1;
+}
+
+.phone-tooltip {
+  position: absolute;
+  bottom: -36px;
+  right: 10px;
+  color: white;
+  background-color: #93969b;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+}
+
+.left-footer-list-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  font-size: 4px;
+  padding-left: 30px;
+}
+
+.left-footer-list-container a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.left-footer-list-container a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  opacity: 0;
+  background-color: white;
+  transition: height 0.2s;
+}
+
+.left-footer-list-container a:hover::after {
+  height: 3px;
+  opacity: 1;
+}
+
+.copyright-section {
+  text-align: right;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 40px;
+  padding-right: 10px;
+}
