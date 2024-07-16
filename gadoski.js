@@ -2,7 +2,8 @@
 const posts = [
   {
     link: "https://www.google.com/",
-    title: "Getting Started with Version Control: An Introduction to Git and GitHub",
+    title:
+      "Getting Started with Version Control: An Introduction to Git and GitHub",
     date: "2024-07-14",
   },
   {
@@ -19,7 +20,7 @@ const posts = [
     link: "https://www.google.com/",
     title: "Lorem ipsum dolor sit, amet consectetur adipisicing",
     date: "2024-07-12",
-  }
+  },
 ];
 let postsHTML = "";
 posts.forEach((posts) => {
@@ -44,7 +45,7 @@ project = [
     link: "TO-DO_LIST_MAKER/to-do.html",
   },
   {
-    name: "Youtube Home Page Clone",
+    name: "Youtube Clone",
     image: "images/youtube.webp",
     link: "YOUTUBE_CLONE/youtube_clone.html",
   },

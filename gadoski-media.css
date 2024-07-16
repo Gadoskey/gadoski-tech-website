@@ -1,50 +1,29 @@
 /* Media Queries for Mobile Devices with width 430 pixels and below */
-@media (max-width: 550px) {
-  .form-container {
-      gap: 10px;
-      max-width: 300px;
-      padding: 10px;
-      border-radius: 5px;
-    }
-  
-    .copyright-section {
-      text-align: center;
-    }
-  .header {
-    height: 70px;
-    padding: 0 0;
-  }
-
-  .first-container {
-    margin-top: 0;
-    /* Adjust as needed for mobile layout */
-  }
-
-  .left-section {
-    padding-right: 0;
-  }
-
+@media (max-width: 800px) {
   .page-name {
     width: 130px;
     font-size: 17px;
     font-weight: 600;
-    margin: 0;
-    padding-left: 0;
+    padding-left: 10px;
   }
-
-  .image-container {
-    width: 30px;
-    height: 30px;
+  .form-container {
+    gap: 10px;
+    max-width: 245px;
+    padding: 10px;
+    border-radius: 5px;
   }
-
-  .logo {
-    margin-left: 2px;
-    height: 20px;
-    width: 16px;
-    border-radius: 10px;
+  .form-group{
+    gap: 0;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 50px;
+  }
+  .right-section {
+    padding-right: 0;
   }
   .list-container a {
-    margin-right: 0;
+    margin-right: 10px;
   }
   .list-container a::after {
     left: 4px;
@@ -55,17 +34,9 @@
   .list-container a:hover::after {
     height: 2px;
   }
-  .right-section {
-    padding-right: 0;
-  }
   .right-section div {
     font-size: 13px;
     font-weight: 600;
-  }
-  .right-section img {
-    height: 18px;
-    margin-left: 5px;
-    margin-right: 5px;
   }
   .my-title {
     font-size: 15px;
@@ -114,212 +85,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
   /*footer section*/
-  .left-footer-list-container{
-    font-size: 12px;
+  .left-footer-list-container a {
+    font-size: 16px;
   }
 }
 
 /* Media Queries for Mobile Devices with large screens or mini tablets */
-@media (max-width: 800px) {
-  .header {
-      height: 70px;
-      padding: 0 0;
-    }
-  
-    .first-container {
-      margin-top: 0;
-      /* Adjust as needed for mobile layout */
-    }
-  
-    .left-section {
-      padding-right: 0;
-    }
-  
-    .page-name {
-      width: 130px;
-      font-size: 17px;
-      font-weight: 600;
-      margin: 0;
-      padding-left: 0;
-    }
-  
-    .image-container {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .logo {
-      margin-left: 2px;
-      height: 20px;
-      width: 16px;
-      border-radius: 10px;
-    }
-  
-    .list-container a {
-      margin-right: 0;
-    }
-  
-    .list-container a::after {
-      left: 4px;
-      bottom: 4px;
-      width: 86%;
-    }
-  
-    .list-container a:hover::after {
-      height: 2px;
-    }
-  
-    .right-section {
-      padding-right: 0;
-    }
-  
-    .right-section div {
-      font-size: 13px;
-      font-weight: 600;
-    }
-  
-    .right-section img {
-      height: 18px;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-  
-    .my-title {
-      font-size: 15px;
-      font-weight: 600;
-      padding-top: 30px;
-    }
-  
-    .my-title-about {
-      font-size: 12px;
-      font-weight: 400;
-    }
-  
-    .item1 {
-      margin: 10px 0;
-      width: 400px;
-      font-size: 18px;
-    }
-  
-    .item2 {
-      margin: 10px 0;
-      width: 400px;
-      font-size: 13px;
-      line-height: 24px;
-    }
-  
-    /*styling of the latest post section and table*/
-    .table-container {
-      padding: 50px 10px;
-    }
-  
-    .wide-column {
-      width: 80%;
-    }
-  
-    .narrow-column {
-      width: 20%;
-    }
-  
-    th,
-    td {
-      padding: 5px;
-    }
-  
-    td,
-    th {
-      font-size: 10px;
-    }
-  
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    /*footer section*/
-    .left-footer-list-container a {
-      font-size: 14px;
-    }
-}
-/* Media Queries targeted for tablets Devices */
-@media (max-width: 768px) {
-  .header {
-    height: 60px;
-  }
-
-  .first-container {
-    margin-top: 0;
-    /* Adjust as needed for mobile layout */
-  }
-
-  .left-section {
-    padding-right: 0;
-  }
-
-  .image-text {
-    width: 15px;
-    font-size: 22px;
-    font-weight: 900;
-    margin: 0;
-    padding-left: 0;
-    padding-right: 25px;
-  }
-
-  .image-container {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-  }
-
-  .logo {
-    margin-top: 12px;
-    margin-left: 10px;
-    width: 28px;
-    height: 26px;
-    margin-right: 0;
-    border-radius: 14px;
-    object-fit: fill;
-  }
-
-  .middle-section {
-    display: flex;
-    /*width: 500px;*/
-    flex-direction: row;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(93, 93, 97);
-    border-radius: 4px;
-    border: 1px solid rgb(79, 79, 88);
-  }
-
-  .middle-section a {
-    font-size: 16px;
-  }
-
-  .list-container {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: space-between;
-  }
-
-  .list-container a {
-    color: white;
-    text-decoration: none;
-    padding: 4px;
-    margin: 0;
-  }
-
-  .middle-section a:hover {
-    background-color: #444343;
-    /* Background color on hover */
-    border-radius: 4px;
-    /* Rounded corners on hover */
-  }
-
-  .right-section img {
-    height: 28px;
-  }
-   
-}
+/* Media Queries targeted for tablets Devices*/

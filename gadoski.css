@@ -7,16 +7,15 @@
   flex-direction: row;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: rgb(71, 71, 201);
+  border-bottom-color: #1153bd;
   height: 80px;
 }
 
 .page-name {
-  width: 270px;
+  width: auto;
   font-size: 38px;
   font-weight: 900;
-  margin: 0;
-  padding-left: 10px;
+  padding-left: 20px;
   animation: colorChange 7s infinite;
 }
 
@@ -25,7 +24,6 @@
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: right;
   align-items: center;
   padding-right: 40px;
 }
@@ -38,7 +36,7 @@
 .left-section {
   display: flex;
   flex-direction: row;
-  flex: 2;
+  flex: 1;
   justify-content: left;
   align-items: center;
 }
@@ -47,14 +45,13 @@
   display: flex;
   flex-direction: row;
   flex: 1;
-  padding-right: 4px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .list-container a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 30px;
   position: relative;
 }
 
@@ -74,24 +71,6 @@
   height: 4px;
   opacity: 1;
 }
-
-.image-container {
-  width: 54px;
-  height: 52px;
-  overflow: hidden;
-  /* Ensures that any overflow is hidden */
-}
-
-.logo {
-  margin-top: 12px;
-  margin-left: 20px;
-  width: 34px;
-  height: 32px;
-  margin-right: 0;
-  border-radius: 17px;
-  object-fit: fill;
-}
-
 /*also use this animation for about contact and co*/
 @keyframes colorChange {
   0% {
@@ -125,11 +104,13 @@ body {
   background-color: rgb(248, 245, 245);
 }
 /* Reset default styles */
-body, ul, li {
+body,
+ul,
+li {
   margin: 0;
   list-style: none;
 }
-.first-flex-container{
+.first-flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,7 +120,9 @@ body, ul, li {
   border-radius: 4px;
   background-color: rgb(252, 251, 251);
 }
-.my-title, .my-title-about, .my-image-container{
+.my-title,
+.my-title-about,
+.my-image-container {
   display: flex;
 }
 .my-title {
@@ -184,7 +167,7 @@ body, ul, li {
   font-size: 20px;
   line-height: 34px;
 }
-.talk-class{
+.talk-class {
   color: coral;
 }
 /*styling of the latest post section and table*/
@@ -223,7 +206,7 @@ td,
 th {
   font-size: 24px;
 }
-.see-more-div{
+.see-more-div {
   margin-top: 20px;
   font-size: 16px;
   font-weight: 600;
@@ -231,6 +214,7 @@ th {
 /*project styling*/
 .project-image {
   height: 120px;
+  width: 180px;
   object-fit: contain;
   border-radius: 4px;
 }
@@ -249,7 +233,7 @@ th {
   border-left: 1px solid rgb(231, 231, 231);
   display: flex;
   flex-direction: column;
-  background-color: #002F6C;
+  background-color: #002f6c;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -320,7 +304,6 @@ th {
   background-color: rgb(124, 121, 121);
 }
 
-
 .view-button {
   padding: 8px 40px;
   color: white;
@@ -360,7 +343,7 @@ th {
 }
 
 .message-me-section {
-  padding: 0 20px;
+  padding-left: 20px;
   color: white;
 }
 
@@ -425,13 +408,13 @@ th {
 
 .connect-with-me-grid1 {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 5px 7px;
   column-gap: 15px;
   text-align: center;
-  width: 400px;
+  width: 250px;
 }
 
 .connect-with-me-text {
@@ -439,16 +422,20 @@ th {
   padding-left: 15px;
   color: white;
 }
-.github-tooltip, .facebook-tooltip, .linkedin-tooltip, .x-tooltip, .tiktok-tooltip, .whatsapp-tooltip, .instagram-tooltip, .phone-tooltip{
+.github-tooltip,
+.linkedin-tooltip,
+.x-tooltip,
+.whatsapp-tooltip,
+.instagram-tooltip {
   position: absolute;
   padding: 2px 3px;
   border-radius: 2px;
   background-color: #0c4096;
-    opacity: 0;
-    transition: opacity 0.1s;
-    pointer-events: none;
-    font-size: 13px;
-    color: white;
+  opacity: 0;
+  transition: opacity 0.1s;
+  pointer-events: none;
+  font-size: 13px;
+  color: white;
 }
 .linkedin-container {
   position: relative;
@@ -467,25 +454,12 @@ th {
 }
 
 .github-container:hover .github-tooltip {
-  opacity: 1;  
+  opacity: 1;
 }
 
 .github-tooltip {
   bottom: -26px;
   right: -4px;
-}
-
-.facebook-container {
-  position: relative;
-}
-
-.facebook-container:hover .facebook-tooltip {
-  opacity: 1;
-}
-
-.facebook-tooltip {
-  bottom: -26px;
-  right: -12px;
 }
 
 .x-container {
@@ -499,19 +473,6 @@ th {
 .x-tooltip {
   bottom: -26px;
   right: 14px;
-}
-
-.tiktok-container {
-  position: relative;
-}
-
-.tiktok-container:hover .tiktok-tooltip {
-  opacity: 1;
-}
-
-.tiktok-tooltip {
-  bottom: -26px;
-  right: -2px;
 }
 
 .whatsapp-container {
@@ -539,20 +500,6 @@ th {
   bottom: -26px;
   right: -14px;
 }
-
-.phone-container {
-  position: relative;
-}
-
-.phone-container:hover .phone-tooltip {
-  opacity: 1;
-}
-
-.phone-tooltip {
-  bottom: -26px;
-  right: 1px;
-}
-
 .left-footer-list-container {
   display: flex;
   flex-direction: row;
@@ -560,14 +507,13 @@ th {
   justify-content: left;
   align-items: center;
   text-align: center;
-  font-size: 4px;
   padding-left: 15px;
 }
 
 .left-footer-list-container a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 10px;
   position: relative;
   font-size: 18px;
   text-align: center;
