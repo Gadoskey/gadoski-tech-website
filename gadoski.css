@@ -7,13 +7,13 @@
   flex-direction: row;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: rgb(153, 151, 151);
+  border-bottom-color: rgb(71, 71, 201);
   height: 80px;
 }
 
 .page-name {
   width: 270px;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 900;
   margin: 0;
   padding-left: 10px;
@@ -76,8 +76,8 @@
 }
 
 .image-container {
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 52px;
   overflow: hidden;
   /* Ensures that any overflow is hidden */
 }
@@ -85,10 +85,10 @@
 .logo {
   margin-top: 12px;
   margin-left: 20px;
-  width: 40px;
-  height: 38px;
+  width: 34px;
+  height: 32px;
   margin-right: 0;
-  border-radius: 20px;
+  border-radius: 17px;
   object-fit: fill;
 }
 
@@ -335,7 +335,7 @@ th {
 }
 /*footer css*/
 .footer {
-  height: 600px;
+  height: 550px;
   margin-top: 100px;
   background-color: #1a5bc4;
 }
@@ -421,8 +421,6 @@ th {
 
 .connect-with-me img {
   height: 30px;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .connect-with-me-grid1 {
@@ -431,40 +429,50 @@ th {
   align-items: center;
   justify-content: center;
   padding: 5px;
+  column-gap: 15px;
   text-align: center;
-  margin: 10px 30px;
-  width: 300px;
+  width: 400px;
 }
 
 .connect-with-me-text {
   text-align: left;
-  padding-left: 30px;
+  padding-left: 15px;
   color: white;
 }
+.github-tooltip, .facebook-tooltip, .linkedin-tooltip, .x-tooltip, .tiktok-tooltip, .whatsapp-tooltip, .instagram-tooltip, .phone-tooltip{
+  position: absolute;
+  padding: 2px 3px;
+  border-radius: 2px;
+  background-color: #0c4096;
+    opacity: 0;
+    transition: opacity 0.1s;
+    pointer-events: none;
+    font-size: 13px;
+    color: white;
+}
+.linkedin-container {
+  position: relative;
+}
 
+.linkedin-container:hover .linkedin-tooltip {
+  opacity: 1;
+}
+
+.linkedin-tooltip {
+  bottom: -26px;
+  right: -8px;
+}
 .github-container {
   position: relative;
 }
 
 .github-container:hover .github-tooltip {
-  opacity: 1;
+  opacity: 1;  
 }
 
 .github-tooltip {
-  position: absolute;
-  bottom: -34px;
-  color: white;
+  bottom: -26px;
   right: -4px;
-  font-size: 13px;
-  background-color: #0c4096;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.1s;
-  pointer-events: none;
 }
 
 .facebook-container {
@@ -476,20 +484,8 @@ th {
 }
 
 .facebook-tooltip {
-  position: absolute;
-  bottom: -36px;
-  color: white;
-  background-color: #0c4096;
+  bottom: -26px;
   right: -12px;
-  font-size: 13px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.1s;
-  pointer-events: none;
 }
 
 .x-container {
@@ -501,20 +497,8 @@ th {
 }
 
 .x-tooltip {
-  position: absolute;
-  bottom: -36px;
-  color: white;
-  right: 12px;
-  font-size: 13px;
-  background-color: #0c4096;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.1s;
-  pointer-events: none;
+  bottom: -26px;
+  right: 14px;
 }
 
 .tiktok-container {
@@ -526,20 +510,8 @@ th {
 }
 
 .tiktok-tooltip {
-  position: absolute;
-  bottom: -36px;
-  color: white;
-  font-size: 13px;
+  bottom: -26px;
   right: -2px;
-  background-color: #0c4096;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.1s;
-  pointer-events: none;
 }
 
 .whatsapp-container {
@@ -551,19 +523,8 @@ th {
 }
 
 .whatsapp-tooltip {
-  position: absolute;
-  bottom: -36px;
-  color: white;
+  bottom: -26px;
   right: -12px;
-  background-color: #93969b;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.1s;
-  pointer-events: none;
 }
 
 .instagram-container {
@@ -575,19 +536,8 @@ th {
 }
 
 .instagram-tooltip {
-  position: absolute;
-  bottom: -36px;
+  bottom: -26px;
   right: -14px;
-  color: white;
-  background-color: #93969b;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.1s;
-  pointer-events: none;
 }
 
 .phone-container {
@@ -599,19 +549,8 @@ th {
 }
 
 .phone-tooltip {
-  position: absolute;
-  bottom: -36px;
-  right: 10px;
-  color: white;
-  background-color: #93969b;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.1s;
-  pointer-events: none;
+  bottom: -26px;
+  right: 1px;
 }
 
 .left-footer-list-container {
@@ -622,7 +561,7 @@ th {
   align-items: center;
   text-align: center;
   font-size: 4px;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 .left-footer-list-container a {
