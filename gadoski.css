@@ -1,3 +1,4 @@
+/*bootstrap css -- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel=" stylesheet">*/
 /*header styling*/
 .header {
   background-color: #1a5bc4;
@@ -15,7 +16,7 @@
   width: auto;
   font-size: 38px;
   font-weight: 900;
-  padding-left: 20px;
+  padding-left: 80px;
   animation: colorChange 7s infinite;
 }
 
@@ -51,7 +52,7 @@
 .list-container a {
   color: white;
   text-decoration: none;
-  margin-right: 30px;
+  margin-left: 30px;
   position: relative;
 }
 
@@ -99,11 +100,12 @@
 }
 /*body styling*/
 body {
-  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin: 0;
-  background-color: rgb(248, 245, 245);
+  background-color: white;
 }
-/* Reset default styles */
+    
+/* Reset default styles bootstrap css -- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel=" stylesheet">*/
 body,
 ul,
 li {
@@ -150,8 +152,9 @@ li {
   text-align: center;
   background-color: rgb(78, 78, 167);
   width: 100%;
-  padding: 50px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+  margin: 30px 0;
+  box-shadow: 0 4px 20px rgba(40, 40, 116, 0.4);
 }
 
 .item1 {
@@ -169,6 +172,31 @@ li {
 }
 .talk-class {
   color: coral;
+  text-decoration: none;
+}
+
+/* Styling for the date container */
+.current-date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  padding: 0 0;
+  margin: 40px 0;
+}
+.text-display, .date-display{
+  width: 50%;
+  height: 100%;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(148, 147, 147);
+    text-align: center;
+    align-content: end;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  box-shadow: 8px 8px 10px rgb(124, 121, 121, 0.7);
 }
 /*styling of the latest post section and table*/
 table,
@@ -184,7 +212,13 @@ td {
 .left-align {
   text-align: left;
 }
-
+.post-link{
+  text-decoration: none;
+  color: blue;
+}
+.date-added{
+  text-align: center;
+}
 td {
   text-align: center;
 }
@@ -208,8 +242,16 @@ th {
 }
 .see-more-div {
   margin-top: 20px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 400;
+}
+.see-more-link{
+  text-decoration: none;
+  color: #7f56ee;
+}
+.see-more-link:hover {
+  text-decoration: underline;
+  color: #6330ee;
 }
 /*project styling*/
 .project-image {
@@ -227,17 +269,15 @@ th {
 }
 
 .project-container {
-  border-right: 1px solid rgb(231, 231, 231);
-  border-bottom: 1px solid rgb(231, 231, 231);
-  border-top: 1px solid rgb(231, 231, 231);
-  border-left: 1px solid rgb(231, 231, 231);
+  border: 1px solid rgb(231, 231, 231);
   display: flex;
   flex-direction: column;
-  background-color: #002f6c;
-  border-radius: 4px;
+  background-color: #dfd9d9;
+  border-radius: 8px;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  box-shadow: 4px 4px 8px rgb(158, 155, 155, 0.4);
   transition: transform 0.03s ease;
 }
 
@@ -261,7 +301,7 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(77, 77, 243);
 }
 
 .project-text {
@@ -276,7 +316,9 @@ th {
   grid-template-columns: (1, 1fr);
   justify-content: center;
   align-items: center;
-  padding-bottom: 5px;
+  padding-bottom: 45px;
+  border-top: 1px dotted rgb(158, 155, 155);
+  border-bottom: 1px dotted rgb(190, 185, 185)
 }
 
 .text-and-all-project {
@@ -294,7 +336,8 @@ th {
   font-weight: 600;
   background-color: darkgray;
   cursor: pointer;
-  border-radius: 2px;
+  color: black;
+  border-radius: 4px;
   border: 1px solid rgb(124, 121, 121);
   transition: transform 0.03s ease;
 }
@@ -308,17 +351,17 @@ th {
   padding: 8px 40px;
   color: white;
   border-radius: 50px;
-  border: 1px solid #7c6a05;
-  background-color: #c2a609;
+  border: 1px solid rgb(17, 17, 223);
+  background-color: rgb(77, 77, 243);
   cursor: pointer;
 }
 
 .view-button:hover {
-  background-color: #7c6a05;
+  background-color: rgb(17, 17, 223);
 }
 /*footer css*/
 .footer {
-  height: 550px;
+  height: 605px;
   margin-top: 100px;
   background-color: #1a5bc4;
 }
@@ -328,6 +371,7 @@ th {
   grid-template-columns: 1fr;
   row-gap: 10px;
   column-gap: 10px;
+  padding-top: 20px;
 }
 
 .first-footer-row {
@@ -400,6 +444,7 @@ th {
 .connect-with-me {
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .connect-with-me img {
@@ -411,10 +456,13 @@ th {
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   justify-content: center;
-  padding: 5px 7px;
+  padding: 10px 7px;
+  margin-left: 16px;
   column-gap: 15px;
   text-align: center;
   width: 250px;
+  border: 1px solid rgb(207, 205, 205);
+  border-radius: 4px;
 }
 
 .connect-with-me-text {
@@ -507,7 +555,7 @@ th {
   justify-content: left;
   align-items: center;
   text-align: center;
-  padding-left: 15px;
+  padding-left: 16px;
 }
 
 .left-footer-list-container a {
@@ -518,23 +566,9 @@ th {
   font-size: 18px;
   text-align: center;
   font-weight: 500;
-}
-
-.left-footer-list-container a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 1px;
-  opacity: 0;
-  background-color: white;
-  transition: height 0.2s;
-}
-
-.left-footer-list-container a:hover::after {
-  height: 3px;
-  opacity: 1;
+  border: 1px solid rgb(207, 205, 205);
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 .copyright-section {

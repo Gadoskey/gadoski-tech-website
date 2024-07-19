@@ -26,7 +26,7 @@ let postsHTML = "";
 posts.forEach((posts) => {
   postsHTML += `
     <tr>
-      <td class="left-align"><a href="${posts.link}">${posts.title}</a></td>
+      <td class="left-align"><a class="post-link" href="${posts.link}">${posts.title}</a></td>
       <td class="right-align">${posts.date}</td>
     </tr>
   `;
@@ -84,3 +84,35 @@ project.forEach((project) => {
   `;
   document.querySelector(".project-grid").innerHTML = computedHTML;
 });
+/*The update time function for the first image of the carousel*/
+  function updateDateTime() {
+        // Get the current date
+        const currentDate = new Date();
+
+        // Options for formatting the date eg July, 10 2020.
+        const dateOptions = {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        };
+
+        // Format the date eg July, 10 2020.
+        const formattedDate = currentDate.toLocaleDateString('en-US', dateOptions);
+
+        // Options for formatting the time
+        const timeOptions = {
+          hour: 'numeric',
+          minute: 'numeric',
+          second: 'numeric'
+        };
+
+        // Format time
+        const formattedTime = currentDate.toLocaleTimeString('en-US', timeOptions);
+
+        // Update the content of the date display element/tag
+        document.getElementById('dateDisplay').textContent = formattedDate +'.' + ' '  + formattedTime;
+    }
+  // Call the function initially to display the current date and time
+  updateDateTime();
+  // Update date and time every second
+  setInterval(updateDateTime, 1000);

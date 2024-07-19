@@ -6,6 +6,8 @@
     <title>Gadoski Tech</title>
     <link rel="stylesheet" href="gadoski.css" />
     <link rel="stylesheet" href="gadoski-media.css" />
+    <!-- Bootstrap CSS -->
+
   </head>
 
   <body>
@@ -52,6 +54,16 @@
       </div>
     </div>
 
+    <div class="current-date-container">
+      <div class="text-display">
+        Time flies like an arrow!
+      </div>
+      <div id="dateDisplay" class="date-display">
+        <!-- Placeholder text  that shows incase of delay before JavaScript updates it class="d-block w-100%"-->
+        Loading current date and time...
+      </div>
+    </div>
+
     <div class="table-container">
       <table style="width: 100%">
         <colgroup>
@@ -60,12 +72,12 @@
         </colgroup>
         <tr>
           <th class="left-align">Latest Posts</th>
-          <th class="right-align">Date Added</th>
+          <th class="right-align date-added">Date Added</th>
         </tr>
         <tbody class="js-generated-post"></tbody>
       </table>
       <div class="see-more-div">
-        Want to see more? view <a href="">All Posts</a>
+        Want to see more? view <a class="see-more-link" href="">All Posts</a>
       </div>
     </div>
 
@@ -159,6 +171,6 @@
         </div>
       </div>
     </footer>
-    <script src="gadoski.js"></script>
+    <script src="gadoski.js"></script>    
   </body>
 </html>

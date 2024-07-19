@@ -24,6 +24,7 @@
   }
   .list-container a {
     margin-right: 10px;
+    margin-left: 0;
   }
   .list-container a::after {
     left: 4px;
@@ -37,6 +38,10 @@
   .right-section div {
     font-size: 13px;
     font-weight: 600;
+  }
+  .container{
+    padding-top: 30px;
+      padding-bottom: 90px;
   }
   .my-title {
     font-size: 15px;
@@ -56,12 +61,26 @@
   .item2 {
     margin: 10px 0;
     width: 400px;
+    height: 150px;
     font-size: 13px;
     line-height: 24px;
   }
+  /*media styling for carousel*/
+    .current-date-container {
+      height: 150px;
+      width: 100%;
+      padding: 0 0;
+      margin: 0 0;
+    }
+    .text-display, .date-display {
+      width: 70%;
+      height: 100%;
+      font-size: 14px;
+      font-weight: 600;
+    }
   /*styling of the latest post section and table*/
   .table-container {
-    padding: 50px 10px;
+    padding: 50px 22px;
   }
   .wide-column {
     width: 80%;
@@ -85,6 +104,9 @@
     grid-template-columns: repeat(1, 1fr);
   }
   /*footer section*/
+  .footer{
+  height: 560px;
+  }
   .left-footer-list-container a {
     font-size: 16px;
   }
