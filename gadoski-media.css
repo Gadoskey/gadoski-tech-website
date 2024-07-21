@@ -1,5 +1,8 @@
 /* Media Queries for Mobile Devices with width 430 pixels and below */
 @media (max-width: 800px) {
+  .header{
+    height: 50px;
+  }
   .page-name {
     width: 130px;
     font-size: 17px;
@@ -12,7 +15,7 @@
     padding: 10px;
     border-radius: 5px;
   }
-  .form-group{
+  .form-group {
     gap: 0;
   }
   .form-group input,
@@ -27,9 +30,9 @@
     margin-left: 0;
   }
   .list-container a::after {
-    left: 4px;
-    bottom: 4px;
-    width: 86%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 
   .list-container a:hover::after {
@@ -39,9 +42,9 @@
     font-size: 13px;
     font-weight: 600;
   }
-  .container{
+  .container {
     padding-top: 30px;
-      padding-bottom: 90px;
+    padding-bottom: 90px;
   }
   .my-title {
     font-size: 15px;
@@ -66,51 +69,92 @@
     line-height: 24px;
   }
   /*media styling for carousel*/
-    .current-date-container {
-      height: 150px;
-      width: 100%;
-      padding: 0 0;
-      margin: 0 0;
-    }
-    .text-display, .date-display {
-      width: 70%;
-      height: 100%;
-      font-size: 14px;
-      font-weight: 600;
-    }
+  .current-date-container {
+    height: 150px;
+    width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+  }
+  .text-display,
+  .date-display {
+    width: 70%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+  }
   /*styling of the latest post section and table*/
   .table-container {
     padding: 50px 22px;
   }
   .wide-column {
-    width: 80%;
+    width: 82%;
   }
 
   .narrow-column {
-    width: 20%;
+    width: 18%;
   }
 
-  th,
-  td {
-    padding: 5px;
+  th {
+    font-weight: 600;
   }
 
   td,
   th {
     font-size: 10px;
+    padding: 7px 2px;
   }
+  .see-more-div{
+    font-size: 14px;
+  }
+  /*projecct styling*/
   .project-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   /*footer section*/
-  .footer{
-  height: 560px;
+  .footer {
+    height: 560px;
   }
   .left-footer-list-container a {
     font-size: 16px;
   }
+
+  /* Media Queries for the about page */
+    .aboutContainer{
+      padding-top: 25px;
+      row-gap: 15px;
+    }
+  .aboutMe {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .aboutMe1 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 5px;
+  }
+  .aboutMe {
+    width: 80%;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .aboutMeMore{
+    width: 80%;
+  }
+  .aboutMeIntroduction {
+    width: 80%;
+    line-height: 24px;
+    font-size: 12px;
+  }
+    .aboutMe1Date {
+      margin-top: 5px;
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+        .aboutMeMore li {
+          font-size: 12px;
+          padding: 0 0;
+        }
 }
 
-/* Media Queries for Mobile Devices with large screens or mini tablets */
 /* Media Queries targeted for tablets Devices*/

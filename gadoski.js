@@ -8,7 +8,7 @@ const posts = [
   },
   {
     link: "https://www.google.com/",
-    title: "Lorem ipsum dolor sit, amet consectetur adipisicing",
+    title: "EmailJS: Receive email from client-side without a backend server",
     date: "2024-07-12",
   },
   {
@@ -35,23 +35,23 @@ posts.forEach((posts) => {
 /*project js*/
 project = [
   {
-    name: "Rock-Papper-Scissors",
-    image: "images/rock-paper-scissors.jpg",
-    link: "ROCK_PAPER_SCISSORS-GAME/Simple-rock_paper_scissors-game.html",
-  },
-  {
     name: "Todo List Web App",
     image: "images/to-do-list.jpg",
     link: "TO-DO_LIST_MAKER/to-do.html",
   },
   {
+    name: "Rock-Papper-Scissors",
+    image: "images/rock-paper-scissors.jpg",
+    link: "ROCK_PAPER_SCISSORS-GAME/Simple-rock_paper_scissors-game.html",
+  },
+  {
     name: "Youtube Clone",
-    image: "images/youtube.webp",
+    image: "images/youtube.png",
     link: "YOUTUBE_CLONE/youtube_clone.html",
   },
   {
-    name: "Rock-Papper-Scissors",
-    image: "images/rock-paper-scissors.jpg",
+    name: "Bash Shell Clone",
+    image: "images/bash.png",
     link: "ROCK_PAPER_SCISSORS-GAME/Simple-rock_paper_scissors-game.html",
   },
   {
@@ -61,7 +61,7 @@ project = [
   },
   {
     name: "Youtube Home Page Clone",
-    image: "images/youtube.webp",
+    image: "images/youtube.png",
     link: "YOUTUBE_CLONE/youtube_clone.html",
   },
 ];
@@ -116,3 +116,22 @@ project.forEach((project) => {
   updateDateTime();
   // Update date and time every second
   setInterval(updateDateTime, 1000);
+
+  
+  /*EmailJS javascript to send mail to me with EmailJS sorting out the backend for me. i will
+  update this with node and express when i fully understand how to go about it*/
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("mailOptions").addEventListener("submit", function(event){
+    event.preventDefault();
+    const serviceId = "service_7njsmph";
+    const templateId = "template_xy8v0jb";
+    emailjs.sendForm(serviceId, templateId, this)
+    .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById('mailOptions').reset();
+        alert('Email sent successfully!');
+        }, function(error) {
+            console.log('FAILED...', error);
+        });
+      });
+});

@@ -6,18 +6,27 @@
     <title>Gadoski Tech</title>
     <link rel="stylesheet" href="gadoski.css" />
     <link rel="stylesheet" href="gadoski-media.css" />
-    <!-- Bootstrap CSS -->
-
+    <!-- Bootstrap CSS Emailjs testing -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+        publicKey: "pv-WZNhxZzHWv4lVr",
+        });
+      })();
+    </script>
   </head>
 
   <body>
     <div class="header">
       <div class="left-section">
-        <div id="js-image-text" class="page-name">Gadoski Tech</div>
+        <div><a id="js-image-text" class="page-name" href="https://www.gadoski.tech/">Gadoski Tech</a></div>
       </div>
       <div class="right-section">
         <div class="list-container">
-          <a href="#about">About</a>
+          <a href="about.html">About</a>
           <a href="#contact">Blog</a>
           <a href="https://github.com/Gadoskey?tab=repositories">Github</a>
           <a href="#projects">Projects</a>
@@ -39,7 +48,7 @@
 
     <div class="container">
       <div class="item1">
-        <strong>Hi, i'm Mustopha. Nice to meet you.</strong>
+        <strong>Hi, i'm Opeyemi. Nice to meet you.</strong>
       </div>
       <div class="item2">
         It's been two years since I dove into the world of technology. The
@@ -96,11 +105,8 @@
             <h2 class="send-me-a-message-text" id="talk-div">
               Send me a Message
             </h2>
-            <form
-              action="http://gadoski.tech/send-message"
-              method="POST"
-              class="form-container"
-            >
+            
+            <form class="form-container" id="mailOptions" onsubmit="sendEmail(event)">
               <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required />
@@ -116,7 +122,7 @@
                 <textarea id="message" name="message" required></textarea>
               </div>
 
-              <button class="footer-message-button" type="submit">Send</button>
+              <button id="submit" class="footer-message-button" type="submit">Send</button>
             </form>
           </div>
           <div class="connect-with-me">

@@ -17,6 +17,7 @@
   font-size: 38px;
   font-weight: 900;
   padding-left: 80px;
+  text-decoration: none;
   animation: colorChange 7s infinite;
 }
 
@@ -118,9 +119,8 @@ li {
   justify-content: center;
   align-items: center;
   row-gap: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   border-radius: 4px;
-  background-color: rgb(252, 251, 251);
 }
 .my-title,
 .my-title-about,
@@ -150,13 +150,12 @@ li {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgb(78, 78, 167);
+  background-color: #1a5bc4;
   width: 100%;
   padding: 40px 0;
-  margin: 30px 0;
-  box-shadow: 0 4px 20px rgba(40, 40, 116, 0.4);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(65, 119, 235, 0.4);
 }
-
 .item1 {
   margin: 10px 0;
   width: 700px;
@@ -214,7 +213,7 @@ td {
 }
 .post-link{
   text-decoration: none;
-  color: blue;
+  color: #1a5bc4;
 }
 .date-added{
   text-align: center;
@@ -247,7 +246,7 @@ th {
 }
 .see-more-link{
   text-decoration: none;
-  color: #7f56ee;
+    color: #1a5bc4;
 }
 .see-more-link:hover {
   text-decoration: underline;
@@ -257,8 +256,9 @@ th {
 .project-image {
   height: 120px;
   width: 180px;
-  object-fit: contain;
+  object-fit: fill;
   border-radius: 4px;
+  border: 1px solid rgb(189, 187, 187);
 }
 
 .project-grid {
@@ -301,7 +301,7 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(77, 77, 243);
+  color: #1a5bc4;
 }
 
 .project-text {
@@ -351,8 +351,8 @@ th {
   padding: 8px 40px;
   color: white;
   border-radius: 50px;
-  border: 1px solid rgb(17, 17, 223);
-  background-color: rgb(77, 77, 243);
+  border: 1px solid #0c48a8;
+  background-color: #1a5bc4;
   cursor: pointer;
 }
 
@@ -578,4 +578,56 @@ th {
   font-weight: 500;
   margin-top: 40px;
   padding-right: 10px;
+}
+
+/*Styling of the about page----------------------------------------
+----------------------------------*/
+.aboutContainer{
+  padding-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(255, 255, 255);
+  place-items: center;
+  row-gap: 25px;
+  font-size: 19px;
+  color: rgb(54, 54, 54);
+  /* Center horizontally */
+}
+.aboutMe{
+  width: 50%;
+    font-size: 45px;
+    font-weight: 700;
+    color: black;
+}
+.aboutMe1{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    border: 1px solid rgb(231, 229, 229);
+    padding: 15px 10px;
+}
+.aboutMe1Date{
+  margin-top: 10px;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.aboutMeIntroduction{
+  width: 50%;
+  line-height: 28px;
+}
+.aboutMeMore{
+  width: 50%;
+    line-height: 28px;
+}
+.aboutMeMore li{
+  padding: 5px 0;
+}
+.aboutMeMore a{
+  text-decoration: none;
+  color: rgb(54, 54, 54);
+}
+.alx{
+  text-decoration: none;
+  color: #1a5bc4;
 }
