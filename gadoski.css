@@ -22,25 +22,22 @@
 }
 
 /*The two sections in the header*/
-.right-section {
+.left-section, .right-section {
   display: flex;
   flex: 1;
   flex-direction: row;
   align-items: center;
+}
+.right-section{
   padding-right: 40px;
 }
-
 .right-section div {
   font-size: 20px;
   font-weight: 800;
 }
 
 .left-section {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
   justify-content: left;
-  align-items: center;
 }
 
 .list-container {
@@ -628,6 +625,55 @@ th {
   color: rgb(54, 54, 54);
 }
 .alx{
+  text-decoration: none;
+  color: #1a5bc4;
+}
+/*----------Styling of the blog page------------------------------------------------------
+---------------------------------*/
+.blogContainer{
+  display: grid;
+  width: 100%;
+  place-items: center;
+  grid-template-columns: 1fr;
+  padding-top: 50px;
+    row-gap: 25px;
+  color: rgb(54, 54, 54);
+}
+.blogContainerHead{
+  width: 50%;
+}
+.blogContainerHeadTitle{
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.blogContainerHeadDescription{
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.blog2024{
+  width: 50%;
+  border: 1px solid rgb(170, 169, 169);
+  border-radius: 20px;
+}
+.blogYear{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.blogPost{
+  font-size: 22px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-right: 5px;
+  border-top: 1px solid rgb(194, 192, 192);
+}
+.blogPost a{
   text-decoration: none;
   color: #1a5bc4;
 }

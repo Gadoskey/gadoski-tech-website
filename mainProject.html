@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="gadoski.css">
+  <link rel="stylesheet" href="gadoski-media.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "pv-WZNhxZzHWv4lVr",
+      });
+    })();
+  </script>
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+      <div><a id="js-image-text" class="page-name" href="https://www.gadoski.tech/">Gadoski Tech</a></div>
+    </div>
+    <div class="right-section">
+      <div class="list-container">
+        <a href="about.html">About</a>
+        <a href="blog_page/blog.html">Blog</a>
+        <a href="https://github.com/Gadoskey?tab=repositories">Github</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </div>
+  <div class="mainProjectContainer">
+    <div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-row">
+      <div class="first-footer-row">
+        <div class="message-me-section">
+          <h2 class="send-me-a-message-text" id="talk-div">
+            Send me a Message
+          </h2>
+  
+          <form class="form-container" id="mailOptions" onsubmit="sendEmail(event)">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+  
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+  
+            <button id="submit" class="footer-message-button" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="connect-with-me">
+          <h2 class="connect-with-me-text">Connect With Me</h2>
+          <div class="connect-with-me-grid1">
+            <div class="github-container">
+              <a href="https://github.com/Gadoskey?tab=repositories" target="_blank"><img class="github"
+                  src="images\github.png" alt="" /></a>
+              <div class="github-tooltip">Github</div>
+            </div>
+            <div class="x-container">
+              <a href="https://x.com/ym_Opeyemi" target="_blank"><img class="test" src="images\x.png" alt="" /></a>
+              <div class="x-tooltip">X</div>
+            </div>
+            <div class="whatsapp-container">
+              <a href="https://wa.me/08181803981" target="_blank"><img src="images\whatsapp.png" alt="" /></a>
+              <div class="whatsapp-tooltip">WhatsApp</div>
+            </div>
+            <div class="instagram-container">
+              <a href="https://www.instagram.com/ope_mii?igsh=MWt1cHc5cWN4cmVoMw%3D%3D&utm_source=qr" target="_blank"><img
+                  src="images\instagram.png" alt="" /></a>
+              <div class="instagram-tooltip">Instagram</div>
+            </div>
+            <div class="linkedin-container">
+              <a
+                href="https://www.linkedin.com/in/mustapha-opeyemi-yusuf-9a244a283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img
+                  src="images\linkedin.png" alt="" /></a>
+              <div class="linkedin-tooltip">LinkedIn</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="first-footer-grid">
+        <div class="left-footer-list-container">
+          <a class="testing-about" href="#about">About</a>
+          <a href="#contact">Blog</a>
+          <a href="https://github.com/Gadoskey?tab=repositories">Github</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <div class="copyright-section">&copy; 2024 Gadoski Tech.</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

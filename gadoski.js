@@ -7,13 +7,13 @@ const posts = [
     date: "2024-07-14",
   },
   {
-    link: "https://www.google.com/",
-    title: "EmailJS: Receive email from client-side without a backend server",
+    link: "blog_page/usingEmailJS/EmailJS.html",
+    title: "Using EmailJS: An Easy Way to Send Emails With JavaScript + HTML",
     date: "2024-07-12",
   },
   {
     link: "https://www.google.com/",
-    title: "Lorem ipsum dolor sit, amet consectetur adipisicing",
+    title: 'What happens when you type "https://www.google.com" in your browser and press "Enter"?',
     date: "2024-07-12",
   },
   {
