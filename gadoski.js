@@ -7,7 +7,7 @@ const posts = [
     date: "2024-07-14",
   },
   {
-    link: "blog_page/usingEmailJS/EmailJS.html",
+    link: "article_page/usingEmailJS/EmailJS.html",
     title: "Using EmailJS: An Easy Way to Send Emails With JavaScript + HTML",
     date: "2024-07-12",
   },
