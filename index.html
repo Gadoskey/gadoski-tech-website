@@ -2,27 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gadoski Tech</title>
     <link rel="stylesheet" href="gadoski.css" />
     <link rel="stylesheet" href="gadoski-media.css" />
     <!-- Bootstrap CSS Emailjs testing -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      (function(){
+      (function () {
         emailjs.init({
-        publicKey: "pv-WZNhxZzHWv4lVr",
+          publicKey: "pv-WZNhxZzHWv4lVr",
         });
       })();
     </script>
   </head>
-
   <body>
     <div class="header">
       <div class="left-section">
-        <div><a id="js-image-text" class="page-name" href="https://www.gadoski.tech/">Gadoski Tech</a></div>
+        <div>
+          <a
+            id="js-image-text"
+            class="page-name"
+            href="https://www.gadoski.tech/"
+            >Gadoski Tech</a
+          >
+        </div>
       </div>
       <div class="right-section">
         <div class="list-container">
@@ -64,9 +71,7 @@
     </div>
 
     <div class="current-date-container">
-      <div class="text-display">
-        Time flies like an arrow!
-      </div>
+      <div class="text-display">Time flies like an arrow!</div>
       <div id="dateDisplay" class="date-display">
         <!-- Placeholder text  that shows incase of delay before JavaScript updates it class="d-block w-100%"-->
         Loading current date and time...
@@ -105,8 +110,12 @@
             <h2 class="send-me-a-message-text" id="talk-div">
               Send me a Message
             </h2>
-            
-            <form class="form-container" id="mailOptions" onsubmit="sendEmail(event)">
+
+            <form
+              class="form-container"
+              id="mailOptions"
+              onsubmit="sendEmail(event)"
+            >
               <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required />
@@ -122,7 +131,9 @@
                 <textarea id="message" name="message" required></textarea>
               </div>
 
-              <button id="submit" class="footer-message-button" type="submit">Send</button>
+              <button id="submit" class="footer-message-button" type="submit">
+                Send
+              </button>
             </form>
           </div>
           <div class="connect-with-me">
@@ -177,6 +188,6 @@
         </div>
       </div>
     </footer>
-    <script src="gadoski.js"></script>    
+    <script src="gadoski.js"></script>
   </body>
 </html>

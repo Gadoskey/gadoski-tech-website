@@ -1,25 +1,15 @@
 /*latest post js*/
 const posts = [
   {
-    link: "https://www.google.com/",
-    title:
-      "Getting Started with Version Control: An Introduction to Git and GitHub",
-    date: "2024-07-14",
+    link: "article_page/whatHappens/whatHappens.html",
+    title: 'What happens when you type "https://www.google.com" in your browser and press "Enter"?',
+    date: "2024-07-22",
   },
+
   {
     link: "article_page/usingEmailJS/EmailJS.html",
     title: "Using EmailJS: An Easy Way to Send Emails With JavaScript + HTML",
-    date: "2024-07-12",
-  },
-  {
-    link: "https://www.google.com/",
-    title: 'What happens when you type "https://www.google.com" in your browser and press "Enter"?',
-    date: "2024-07-12",
-  },
-  {
-    link: "https://www.google.com/",
-    title: "Lorem ipsum dolor sit, amet consectetur adipisicing",
-    date: "2024-07-12",
+    date: "2024-07-22",
   },
 ];
 let postsHTML = "";
