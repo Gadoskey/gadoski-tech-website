@@ -1,14 +1,14 @@
 /*bootstrap css -- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel=" stylesheet">*/
 /*header styling*/
 .header {
-  background-color: #1a5bc4;
+  background-color: rgb(0, 174, 255); /* #1a5bc4*/;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #1153bd;
+  border-bottom-color:/* #1153bd*/rgb(3, 157, 228);
   height: 80px;
 }
 
@@ -150,11 +150,11 @@ li {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #1a5bc4;
+  background-color: rgb(0, 174, 255)/* #1a5bc4*/;
   width: 100%;
   padding: 40px 0;
   margin-bottom: 30px;
-  box-shadow: 0 4px 20px rgba(65, 119, 235, 0.4);
+  box-shadow: 0 4px 20px rgb(1, 157, 230) /* rgba(65, 119, 235, 0.4)*/;
 }
 .item1 {
   margin: 10px 0;
@@ -175,29 +175,32 @@ li {
 }
 
 /* Styling for the date container */
-.current-date-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  width: 100%;
-  padding: 0 0;
-  margin: 40px 0;
-}
-.text-display,
-.date-display {
-  width: 50%;
-  height: 100%;
-  font-size: 40px;
-  font-weight: 800;
-  color: rgb(148, 147, 147);
-  text-align: center;
-  align-content: end;
-  border-radius: 20px;
-  padding-bottom: 20px;
-  box-shadow: 8px 8px 10px rgb(124, 121, 121, 0.7);
-}
+    .current-date-container {
+      height: 150px;
+      display: grid;
+      width: 100%;
+      padding: 0 0;
+      margin-top: 20px;
+      place-items: center;
+      grid-template-columns: 1fr;
+      /*background-color: rgb(0, 174, 255);*/
+    }
+  
+    .current-date-container1 {
+      width: 50%;
+      height: 80%;
+      border: 1px solid rgb(187, 186, 186);
+      background-color: rgb(248, 248, 248);
+      border-radius: 30px;
+      text-align: center;
+    }
+  
+    .text-display,
+    .date-display {
+      font-size: 40px;
+      font-weight: 800;
+      padding-bottom: 10px;
+    }
 /*styling of the latest post section and table*/
 table,
 th,
@@ -242,7 +245,7 @@ th {
 }
 .see-more-div {
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
 }
 .see-more-link {
@@ -255,8 +258,8 @@ th {
 }
 /*project styling*/
 .project-image {
-  height: 120px;
-  width: 180px;
+  height: 100px;
+  width: 140px;
   object-fit: fill;
   border-radius: 4px;
   border: 1px solid rgb(189, 187, 187);
@@ -273,11 +276,12 @@ th {
   border: 1px solid rgb(231, 231, 231);
   display: flex;
   flex-direction: column;
-  background-color: #dfd9d9;
+  background-color: rgb(200, 200, 200) /* #dfd9d9*/;
   border-radius: 8px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 5px;
+  padding-bottom: 10px;
   box-shadow: 4px 4px 8px rgb(158, 155, 155, 0.4);
   transition: transform 0.03s ease;
 }
@@ -290,19 +294,19 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px;
-  margin-bottom: 20px;
+  height: 120px;
+  margin-bottom: 5px;
 }
 
 .project-name {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 800;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1a5bc4;
+  color: rgb(0, 174, 255) /*#1a5bc4*/;
 }
 
 .project-text {
@@ -352,19 +356,19 @@ th {
   padding: 8px 40px;
   color: white;
   border-radius: 50px;
-  border: 1px solid #0c48a8;
-  background-color: #1a5bc4;
+  border: 1px solid rgb(0, 155, 226) /* #2265d1*/;
+  background-color:  rgb(0, 174, 255) /* #1a5bc4*/;
   cursor: pointer;
 }
 
 .view-button:hover {
-  background-color: rgb(17, 17, 223);
+  background-color: rgb(2, 155, 226) /* rgb(48, 48, 236)*/;
 }
 /*footer css*/
 .footer {
   height: 605px;
   margin-top: 100px;
-  background-color: #1a5bc4;
+  background-color: rgb(0, 174, 255) /* #1a5bc4*/;
 }
 
 .footer-row {

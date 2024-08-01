@@ -7,7 +7,7 @@
     width: 130px;
     font-size: 17px;
     font-weight: 600;
-    padding-left: 10px;
+    padding-left: 30px;
   }
   .form-container {
     gap: 10px;
@@ -68,23 +68,21 @@
     font-size: 13px;
     line-height: 24px;
   }
-  /*media styling for carousel*/
-  .current-date-container {
-    height: 150px;
-    width: 100%;
-    padding: 0 0;
-    margin: 0 0;
-  }
-  .text-display,
-  .date-display {
-    width: 70%;
-    height: 100%;
-    font-size: 14px;
-    font-weight: 600;
-  }
+  /*media styling for date container*/
+    .current-date-container1 {
+      width: 70%;
+      height: 55%;
+    }
+
+    .text-display,
+    .date-display {
+      font-size: 23px;
+      font-weight: 600;
+      padding: 5px;
+    }
   /*styling of the latest post section and table*/
   .table-container {
-    padding: 50px 22px;
+    padding: 30px 22px;
   }
   .wide-column {
     width: 82%;
@@ -111,6 +109,16 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+    .project-text {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 10px;
+      margin: 0;
+    }
+    .all-projects-button {
+      font-size: 14px;
+      font-weight: 500;
+    }
   /*footer section*/
   .footer {
     height: 560px;
