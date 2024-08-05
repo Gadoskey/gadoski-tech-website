@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UsingEmailJS</title>
+    <link rel="stylesheet" href="../../gadoski-media.css" />
     <style>
       .postContainer {
         display: grid;
@@ -22,7 +23,7 @@
       .postTitle {
         font-size: 30px;
         font-weight: 800;
-        text-align: center;
+        text-align: left;
       }
       .postText {
         font-size: 20px;
@@ -42,6 +43,38 @@
         display: inline-block;
         text-align: center;
         overflow: hidden;
+      }
+      @media (max-width: 800px) {
+        /*media styles for secondpost--- Using EmailJS*/
+        .postTextContainer,
+        .postTitleContainer {
+          width: 90%;
+        }
+
+        .postTitle {
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        .postText {
+          font-size: 16px;
+          line-height: 130%;
+        }
+
+        .postTextHeader {
+          font-size: 22px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        .postImageContainer {
+          display: flex;
+          justify-content: center;
+          margin-top: 15px;
+          width: 380px;
+          height: 150px;
+        }
+        /*media styles for secondpost--- Using EmailJS*/
       }
     </style>
   </head>

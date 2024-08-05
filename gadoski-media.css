@@ -1,4 +1,4 @@
-/* Media Queries for Mobile Devices with width 430 pixels and below */
+/* Media Queries for Mobile Devices with width 800 pixels and below */
 @media (max-width: 800px) {
   .header {
     height: 50px;
@@ -23,7 +23,7 @@
     width: 50px;
   }
   .right-section {
-    padding-right: 0;
+    padding-right: 5px;
   }
   .list-container a {
     margin-right: 10px;
@@ -95,7 +95,6 @@
   th {
     font-weight: 600;
   }
-
   td,
   th {
     font-size: 10px;
@@ -163,8 +162,39 @@
     font-size: 12px;
     padding: 0 0;
   }
+/*----------Media Styling of the blog page------------------------------------------------------
+---------------------------------*/
+.blogContainer {
+  padding-top: 40px;
+}
+
+.blogContainerHead {
+  width: 90%;
+}
+
+.blogContainerHeadTitle {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.blogContainerHeadDescription {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.blog2024 {
+  width: 90%;
+}
+
+.blogYear {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.blogPost {
+  font-size: 18px;
 }
 
 /* Media Queries targeted ------------------------------
 -------------------------------------------------------------------for the projects*/
-/*media styles for firstpost--- what happens when you search google*/
+}

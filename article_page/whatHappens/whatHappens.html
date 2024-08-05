@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What Happens When You Search Google</title>
+    <link rel="stylesheet" href="../../gadoski-media.css"/>
     <style>
       .whatHappensContainer {
         display: grid;
@@ -17,7 +18,7 @@
       }
       .whatHappensTitleContainer {
         width: 50%;
-        text-align: center;
+        text-align: left;
       }
       .whatHappensTitle {
         font-size: 34px;
@@ -29,6 +30,10 @@
       .whatHappensText {
         font-size: 24px;
         line-height: 130%;
+      }
+      .whatHappensText a{
+        text-decoration: none;
+        color: blue;
       }
       .whatHappensTextHeader {
         font-size: 24px;
@@ -44,6 +49,46 @@
         display: inline-block;
         text-align: center;
         overflow: hidden;
+      }
+      /*media styles for firstpost--- what happens when you search google*/
+      @media (max-width: 800px) {
+        .whatHappensTitleContainer {
+          width: 90%;
+        }
+
+        .whatHappensTitle {
+          font-size: 24px;
+          font-weight: 600;
+        }
+
+        .whatHappensTextContainer {
+          width: 90%;
+        }
+
+        .whatHappensText {
+          font-size: 18px;
+          line-height: 130%;
+        }
+
+        .whatHappensTextHeader {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .whatHappensImageContainer {
+          display: flex;
+          justify-content: center;
+          margin-top: 15px;
+          width: 360px;
+          height: 150px;
+        }
+
+        .whatHappensImage {
+          display: inline-block;
+          text-align: center;
+          overflow: hidden;
+        }
       }
     </style>
   </head>
