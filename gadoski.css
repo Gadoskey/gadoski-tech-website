@@ -207,7 +207,6 @@ th,
 td {
   border: 1px solid darkgray;
 }
-
 .table-container {
   padding: 50px 180px;
 }
@@ -483,7 +482,7 @@ th {
   position: absolute;
   padding: 2px 3px;
   border-radius: 2px;
-  background-color: #0c4096;
+  background-color: rgb(3, 159, 231);
   opacity: 0;
   transition: opacity 0.1s;
   pointer-events: none;

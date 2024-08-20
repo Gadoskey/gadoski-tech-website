@@ -25,6 +25,11 @@ posts.forEach((posts) => {
 /*project js*/
 project = [
   {
+    name: "Gadoski Web Blog",
+    image: "images/web-blog.jpg",
+    link: "http://blog.gadoski.tech/",
+  },
+  {
     name: "Todo List Web App",
     image: "images/to-do-list.jpg",
     link: "TO-DO_LIST_MAKER/to-do.html",
@@ -43,11 +48,6 @@ project = [
     name: "Bash Shell Clone",
     image: "images/bash.png",
     link: "ROCK_PAPER_SCISSORS-GAME/Simple-rock_paper_scissors-game.html",
-  },
-  {
-    name: "Todo List Web App",
-    image: "images/to-do-list.jpg",
-    link: "TO-DO_LIST_MAKER/to-do.html",
   },
   {
     name: "Youtube Home Page Clone",
