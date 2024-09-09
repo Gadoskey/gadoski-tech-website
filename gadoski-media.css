@@ -7,7 +7,7 @@
     width: 130px;
     font-size: 17px;
     font-weight: 600;
-    padding-left: 30px;
+    padding-left: 20px;
   }
   .form-container {
     gap: 10px;
@@ -47,7 +47,7 @@
     padding-bottom: 90px;
   }
   .my-title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     padding-top: 30px;
   }
@@ -76,20 +76,21 @@
 
   .text-display,
   .date-display {
-    font-size: 23px;
-    font-weight: 600;
-    padding: 5px 12px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 6px 4px;
   }
   /*styling of the latest post section and table*/
+  
   .table-container {
-    padding: 30px 22px;
+    padding: 10px 22px;
   }
   .wide-column {
-    width: 82%;
+    width: 80%;
   }
 
   .narrow-column {
-    width: 18%;
+    width: 20%;
   }
 
   th {
@@ -101,7 +102,7 @@
     padding: 7px 2px;
   }
   .see-more-div {
-    font-size: 14px;
+    font-size: 10px;
   }
   /*projecct styling*/
   .project-grid {

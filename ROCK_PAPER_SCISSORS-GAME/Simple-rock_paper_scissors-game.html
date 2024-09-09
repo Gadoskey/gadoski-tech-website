@@ -1,36 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="rock_paper_scissors.css">
+    <link rel="stylesheet" href="rock_paper_scissors.css" />
   </head>
   <body>
-    <p>Rock - Paper - Scissors</p>
-    <p>Click one of the buttons below to play</p>
-    <button id="rockButton">
-    <img src="rock-emoji.png" alt="">
-    </button>
+    <header>
+      <!-- First Layer of Header -->
+      <div class="header-upper">
+        <p class="header-text">Are you ready for the ultimate challenge? Let's play!</p>
+      </div>
+    
+      <!-- Second Layer (Main Header) -->
+      <div class="header-main">
+        <div class="game-info">
+          <h1>Rock Paper Scissors</h1>
+          <p>Challenge the AI or Watch the Computer Duel!</p>
+          <div class="moreContainer">
+            <div><a href="#playNow">Play now</a></div>
+            <div><a href="https://github.com/Gadoskey/gadoski-tech-website/tree/main/ROCK_PAPER_SCISSORS-GAME">Explore the Code</a></div>
+            <div><a href="../index.html#talk-div">Get Support</a></div>
+            <div><a href="../index.html">Back to Homepage</a></div>
+          </div>
+        </div>
+        <div class="game-image-container">
+          <!-- Image for the game (larger and centered) -->
+          <img src="RPS_IMAGE1.jpg" alt="Rock Paper Scissors Image" class="game-image">
+        </div>
+      </div>
+    </header>
 
-    <button id="paperButton">
-      <img src="paper-emoji.png" alt="">
-    </button>
-    <button id="scissorsButton">
-      <img src="scissors-emoji.png" alt="">
-    </button>
-    <p class="game-result"></p>
-    <div class="moves"></div>
-    <p class="final-result"></p>
-    <button
-      onclick="
-    resetScores()
-  "
-    >
-      Reset Scores
-    </button>
-    <button id="autoPlay">Auto Play</button>
-    <button id="stopAutoPlay">Stop Auto Play</button>
+    <div class="rpsContainer">
+      <div class="rpsContainerHead1">
+        <div class="aboutContainer">
+          <div class="about1">About the Game</div>
+          <div class="about2">
+            Rock-Paper-Scissors is a timeless hand game played between two
+            people, where each player simultaneously forms one of three shapes
+            with their hand: rock, paper, or scissors. It's simple, fun, and
+            widely recognized across the globe. In this digital version of the
+            classic game, players can compete against the computer, testing
+            their strategy and luck. The rules remain the same: rock crushes
+            scissors, scissors cuts paper, and paper covers rock. Keep track of
+            your wins, losses, and ties as you play, and see if you can beat the
+            machine.
+          </div>
+        </div>
+
+        <div class="aboutContainer">
+          <div class="about1">About the Developer</div>
+          <div class="about2">
+            Opeyemi is an aspiring software engineer and customer relations
+            officer with a passion for building engaging digital experiences.
+            With a background in English and software development, Opeyemi
+            brings creativity and technical expertise to his projects. He is the
+            founder of gadoski.tech, where he explores his love for coding
+            through various web applications and interactive projects like
+            Rock-Paper-Scissors. In addition to his development work, he
+            sometimes writes technical content to share his knowledge and
+            insights with others. His journey is driven by a desire to learn,
+            build, and inspire.
+          </div>
+        </div>
+      </div>
+
+      <div class="rpsContainerHead2">
+        <!-- Catchy tagline instead of the game name -->
+        <div class="gameTitle">Watch How It's Done!</div>
+      
+        <!-- Video of people playing the game -->
+        <div>
+          <video class="gameTitleImage" controls>
+            <source src="RPS_VID.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <div class="moreContainer">
+          <div><a href="#watchMore">Watch More</a></div>
+          <div><a href="#playNow">Start Your Game</a></div>
+          <div><a href="https://github.com/Gadoskey?tab=repositories">Coming Soon</a></div>
+          <div><a href="../index.html#talk-div">Contact Us</a></div>
+        </div>
+      </div>
+
+      <div class="rpsContainerHead3">
+        <div class="welcomeMessage">
+          <div class="welcome1">
+            Welcome to the Ultimate Rock-Paper-Scissors Challenge!
+          </div>
+          <div class="welcome2">
+            Are you ready to outsmart the computer and dominate this classic
+            game of strategy? Test your skills and have fun!
+          </div>
+        </div>
+
+        <div class="demoVideo">
+          <div class="welcome1">Watch the Demo</div>
+          <video controls>
+            <source src="demo-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="welcome2">
+            Check out how the game works with a quick demo and voiceover
+            explaining all the cool features!
+          </div>
+        </div>
+      </div>
+
+      <div id="playNow" class="rpsContainerHead4">
+        <div class="gameName">Play Here</div>
+        <div class="welcome1">Click one of the buttons below to play</div>
+        <div class="buttonContainer">
+          <button id="rockButton">
+            <img src="rock-emoji.png" alt="" />
+          </button>
+
+          <button id="paperButton">
+            <img src="paper-emoji.png" alt="" />
+          </button>
+          <button id="scissorsButton">
+            <img src="scissors-emoji.png" alt="" />
+          </button>
+        </div>
+
+        <div class="game-result"></div>
+        <div class="moves"></div>
+        <div class="final-result"></div>
+        <div>
+          <button
+            onclick="
+                                  resetScores()
+                                "
+          >
+            Reset Scores
+          </button>
+          <button id="autoPlay">Auto Play</button>
+          <button id="stopAutoPlay">Stop Auto Play</button>
+        </div>
+      </div>
+    </div>
+
     <script src="rock_paper_scissors.js"></script>
   </body>
 </html>
