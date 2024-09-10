@@ -94,7 +94,7 @@ function playGame(playerMove) {
       <span class="computerNameImg">
         <img src="${computerMove}-emoji.png" alt="">
       </span>
-      <span class="computerName">Computer</span>`;
+      <span class="computerName">Comp</span>`;
   document.querySelector(".moves").classList.add('hasContent');
   document.querySelector(".game-result").innerHTML = result;
 }

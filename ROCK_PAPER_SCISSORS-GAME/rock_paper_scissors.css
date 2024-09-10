@@ -42,7 +42,6 @@
 /* Game Image on the right */
 .game-image-container {
   max-width: 700px;
-  /* Set a max width for the image container */
 }
 
 .game-image {
@@ -59,11 +58,11 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 150px;
-  background: linear-gradient(to right, #2a80c7, #9dd3ec, #2a80c7);
+  background: linear-gradient(to right, #088efc, #717172, #9dd3ec, #088efc);
   /*background: linear-gradient(to right, #ff6a88, #9145b6);*/
   background-color: #88d498;
   color: white;
-}
+} /*#2a80c7*/
 
 .rpsContainer {
   display: grid;
@@ -80,7 +79,7 @@ body {
   display: grid;
   place-items: center;
   width: 90%;
-  border: 1px solid red;
+  border: 1px solid rgb(101, 141, 253);
   border-radius: 4px;
   padding: 5px 30px;
   font-size: 20px;
@@ -90,7 +89,7 @@ body {
   display: grid;
   place-items: center;
   width: 80%;
-  border: 1px solid blue;
+  border: 1px solid rgb(101, 141, 253);
   border-radius: 4px;
   padding: 30px 30px;
   font-size: 24px;
@@ -100,7 +99,7 @@ body {
   display: grid;
   place-items: center;
   width: 90%;
-  border: 1px solid yellow;
+  border: 1px solid rgb(101, 141, 253);
   border-radius: 4px;
   padding: 5px 30px;
   font-size: 20px;
@@ -110,13 +109,13 @@ body {
   display: grid;
   place-items: center;
   width: 80%;
-  border: 1px solid green;
+  border: 1px solid rgb(101, 141, 253);
   border-radius: 4px;
   padding: 30px 30px;
   font-size: 24px;
   height: 110%;
 }
-.rpsContainerHead4 .welcome1{
+.rpsContainerHead4 .welcome1 {
   animation: colorChange 5s infinite;
 }
 .gameName {
@@ -301,7 +300,6 @@ button:active {
 }
 .welcome2 {
   font-size: 18px;
-  margin-bottom: 5px;
 }
 .aboutContainer {
   padding-bottom: 10px;
@@ -341,8 +339,8 @@ video {
 /* Media Queries for Mobile Devices with width 800 pixels and below */
 @media (max-width: 1200px) {
   body {
-      background: linear-gradient(to bottom, #262627, #9dd3ec, #088efc);
-  }
+    background: linear-gradient(to bottom, #088efc, #9dd3ec, #088efc);
+    }
   .header-upper {
     padding: 12px 0;
   }
@@ -358,8 +356,9 @@ video {
   }
 
   .game-image-container {
-    max-width: 100%;
-    margin-top: 20px;
+    max-width: 90%;
+    margin-top: 40px;
+    padding-bottom: 10px;
   }
 
   .game-info h1 {
@@ -446,7 +445,7 @@ video {
     margin-left: -20px;
   }
   .about2 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 140%;
   }
   .gameTitle {
@@ -454,13 +453,13 @@ video {
     font-weight: 600;
   }
   .welcome1 {
-    font-size: 13px;
+    font-size: 19px;
     margin-bottom: 5px;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   .welcome2 {
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 5px;
   }
 }
